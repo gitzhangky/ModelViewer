@@ -1,6 +1,9 @@
 #include<qmainwindow.h>
 #include"OsgWidget.h"
-
+#include"OutputMessageWidget.h"
+#include"DetailDataWidget.h"
+#include"SceneManageWidget.h"
+#include"PropertyWidget.h"
 
 namespace Ui
 {
@@ -17,4 +20,8 @@ public:
 private:
 	Ui::MainWindow* ui;
 	OsgWidget* osgWidget;
+	OutputMessageWidget* outputMessageWidget;
+	DetailDataWidget* detailDataWidget;
+	SceneManageWidget* sceneManageWidget;
+	PropertyWidget* propertyWidget;
 };

@@ -16,6 +16,7 @@ SceneViewer::SceneViewer(const osgViewer::Viewer& viewer, const osg::CopyOp& cop
 {
 	rootScene = new RootScene;
 	setSceneData(rootScene);
+
 }
 
 SceneViewer::SceneViewer()
