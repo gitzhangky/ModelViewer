@@ -1,0 +1,14 @@
+# pkg-config source file
+
+prefix=C:/Users/ZKY/Desktop/ModelViewer/external/OpenSceneGraph/osg_install_debug
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: openscenegraph-osgUI
+Description: Library for creating user interfaces in OpenSceneGraph
+Version: 3.7.0
+Requires: openscenegraph-osgViewer openscenegraph-osgText openscenegraph-osgGA openscenegraph-osgDB openscenegraph-osgUtil openscenegraph-osg openthreads
+Conflicts:
+Libs: -L${libdir} -losgUId
+Cflags: -I${includedir}
