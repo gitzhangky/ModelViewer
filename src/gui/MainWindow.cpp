@@ -13,22 +13,24 @@ MainWindow::MainWindow(QWidget* parent) :QMainWindow(parent)
 	sceneManageWidget = new SceneManageWidget;
 	detailDataWidget = new DetailDataWidget;
 	propertyWidget = new PropertyWidget;
+	statusMonitorWidget = new StatusMonitorWidget;
 	setWindowTitle("ModelViewer");
 	initLayout();
 }
 
 void MainWindow::initLayout()
 {
-	this->addDockWidget(Qt::LeftDockWidgetArea, sceneManageWidget, Qt::Vertical);
-	this->addDockWidget(Qt::LeftDockWidgetArea, detailDataWidget, Qt::Horizontal);
+	this->setCorner(Qt::BottomLeftCorner, Qt::LeftDockWidgetArea);
+	this->addDockWidget(Qt::LeftDockWidgetArea, sceneManageWidget, Qt::Vertical);     //×ó²à
+	this->addDockWidget(Qt::LeftDockWidgetArea, detailDataWidget, Qt::Horizontal);    //×ó²à
+	this->addDockWidget(Qt::LeftDockWidgetArea, outputMessageWidget);				  //×óÏÂ
+	this->addDockWidget(Qt::RightDockWidgetArea, propertyWidget);					  //ÓÒ²à
+	this->addDockWidget(Qt::BottomDockWidgetArea, statusMonitorWidget);				  //µ×²¿
+	this->setCentralWidget(osgWidget);												  //ÖÐ¼ä
 
-	this->addDockWidget(Qt::RightDockWidgetArea, propertyWidget);
-	this->addDockWidget(Qt::BottomDockWidgetArea, outputMessageWidget);
+	this->resizeDocks(QList<QDockWidget*>{sceneManageWidget, outputMessageWidget}, QList<int>{3, 1}, Qt::Vertical);   //ÉèÖÃ±ÈÀý
 
 
 
-
-
-	this->setCentralWidget(osgWidget);
 
 }

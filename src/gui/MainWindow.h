@@ -4,7 +4,7 @@
 #include"DetailDataWidget.h"
 #include"SceneManageWidget.h"
 #include"PropertyWidget.h"
-
+#include"StatusMonitorWidget.h"
 namespace Ui
 {
 	class MainWindow;
@@ -24,4 +24,5 @@ private:
 	DetailDataWidget* detailDataWidget;
 	SceneManageWidget* sceneManageWidget;
 	PropertyWidget* propertyWidget;
+	StatusMonitorWidget* statusMonitorWidget;
 };
