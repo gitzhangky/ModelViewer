@@ -22,8 +22,7 @@ void MainWindow::initLayout()
 	this->addDockWidget(Qt::LeftDockWidgetArea, sceneManageWidget, Qt::Vertical);
 	this->addDockWidget(Qt::LeftDockWidgetArea, detailDataWidget, Qt::Horizontal);
 
-	this->setCorner(Qt::BottomLeftCorner, Qt::BottomDockWidgetArea);
-	this->addDockWidget(Qt::BottomDockWidgetArea, propertyWidget);
+	this->addDockWidget(Qt::RightDockWidgetArea, propertyWidget);
 	this->addDockWidget(Qt::BottomDockWidgetArea, outputMessageWidget);
 
 
