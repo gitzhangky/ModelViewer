@@ -17,7 +17,7 @@ find_package(Assimp REQUIRED)
 
 
 # 查找 Qt
-find_package(Qt5 5.13.2 REQUIRED COMPONENTS Core Widgets Gui OpenGL)
+find_package(Qt5 5.13.2 REQUIRED COMPONENTS Core Widgets Gui OpenGL Svg)
 # 包含子目录
 
 add_subdirectory(${CMAKE_SOURCE_DIR}/src/gui)

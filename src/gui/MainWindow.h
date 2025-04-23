@@ -5,6 +5,7 @@
 #include"SceneManageWidget.h"
 #include"PropertyWidget.h"
 #include"StatusMonitorWidget.h"
+#include<qtoolbutton.h>
 namespace Ui
 {
 	class MainWindow;
@@ -17,6 +18,7 @@ public:
 
 	void initLayout();
 
+	void initToolBarIcon();
 private:
 	Ui::MainWindow* ui;
 	OsgWidget* osgWidget;
@@ -25,4 +27,8 @@ private:
 	SceneManageWidget* sceneManageWidget;
 	PropertyWidget* propertyWidget;
 	StatusMonitorWidget* statusMonitorWidget;
+
+	QToolBar* rightToolBar;
+
+	QAction* act_bk;        //±≥æ∞…Ë÷√∞¥≈•
 };

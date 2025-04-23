@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Resource/gradient_color.svg</file>
+        <file>Resource/11.png</file>
+        <file>Resource/aclogo.icon</file>
+    </qresource>
+</RCC>
